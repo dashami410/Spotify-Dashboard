@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li {
+  margin-right: 20px;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.search-bar {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#chartContainer {
+  display: grid;
+  height: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.chart-card {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+}
+
+canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+#leftbox {
+  float: left;
+  background: Red;
+  width: 25%;
+  height: 280px;
+}
+
+#middlebox {
+  float: left;
+  background: Green;
+  width: 50%;
+  height: 280px;
+}
+
+#rightbox {
+  float: right;
+  background: blue;
+  width: 25%;
+  height: 280px;
+}
